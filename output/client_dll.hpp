@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-14 23:07:52.782756500 UTC
+// 2025-11-24 13:58:14.806423300 UTC
 
 #pragma once
 
@@ -8,8 +8,8 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: client.dll
-        // Class count: 30
-        // Enum count: 0
+        // Class count: 29
+        // Enum count: 2
         namespace client_dll {
             // Parent: None
             // Field count: 1
@@ -147,14 +147,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t position = 0x0; // Vector
                 constexpr std::ptrdiff_t angle = 0xC; // QAngle
                 constexpr std::ptrdiff_t pose_sequence = 0x18; // CUtlString
-            }
-            // Parent: None
-            // Field count: 4
-            namespace C_Chicken_GraphController {
-                constexpr std::ptrdiff_t m_paramActivity = 0x268; // CAnimGraphParamRef<char*>
-                constexpr std::ptrdiff_t m_paramEndActivityImmediately = 0x290; // CAnimGraphParamRef<bool>
-                constexpr std::ptrdiff_t m_paramSnapToSquatting = 0x2B0; // CAnimGraphParamRef<bool>
-                constexpr std::ptrdiff_t m_sActivityFinished = 0x2D0; // CAnimGraphTagRef
             }
             // Parent: None
             // Field count: 2

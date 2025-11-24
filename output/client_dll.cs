@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-14 23:07:52.782756500 UTC
+// 2025-11-24 13:58:14.806423300 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
-    // Class count: 30
-    // Enum count: 0
+    // Class count: 29
+    // Enum count: 2
     public static class ClientDll {
         // Parent: None
         // Field count: 1
@@ -142,14 +142,6 @@ namespace CS2Dumper.Schemas {
             public const nint position = 0x0; // Vector
             public const nint angle = 0xC; // QAngle
             public const nint pose_sequence = 0x18; // CUtlString
-        }
-        // Parent: None
-        // Field count: 4
-        public static class C_Chicken_GraphController {
-            public const nint m_paramActivity = 0x268; // CAnimGraphParamRef<char*>
-            public const nint m_paramEndActivityImmediately = 0x290; // CAnimGraphParamRef<bool>
-            public const nint m_paramSnapToSquatting = 0x2B0; // CAnimGraphParamRef<bool>
-            public const nint m_sActivityFinished = 0x2D0; // CAnimGraphTagRef
         }
         // Parent: None
         // Field count: 2

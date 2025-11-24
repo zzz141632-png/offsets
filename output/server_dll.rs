@@ -1,13 +1,13 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-14 23:07:52.782756500 UTC
+// 2025-11-24 13:58:14.806423300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
         // Module: server.dll
-        // Class count: 156
-        // Enum count: 91
+        // Class count: 155
+        // Enum count: 92
         pub mod server_dll {
             // Alignment: 4
             // Member count: 4
@@ -254,7 +254,7 @@ pub mod cs2_dumper {
             pub mod CCSGOPlayerAnimGraphState {
             }
             // Parent: None
-            // Field count: 24
+            // Field count: 25
             pub mod CDecalInstance {
                 pub const m_sDecalGroup: usize = 0x0; // CGlobalSymbol
                 pub const m_hMaterial: usize = 0x8; // CStrongHandle<InfoForResourceTypeIMaterial2>
@@ -271,10 +271,11 @@ pub mod cs2_dumper {
                 pub const m_flHeight: usize = 0x50; // float32
                 pub const m_flDepth: usize = 0x54; // float32
                 pub const m_flAnimationScale: usize = 0x58; // float32
-                pub const m_flPlaceTime: usize = 0x5C; // GameTime_t
-                pub const m_flFadeStartTime: usize = 0x60; // float32
-                pub const m_flFadeDuration: usize = 0x64; // float32
-                pub const m_flLightingOriginOffset: usize = 0x68; // float32
+                pub const m_flAnimationStartTime: usize = 0x5C; // float32
+                pub const m_flPlaceTime: usize = 0x60; // GameTime_t
+                pub const m_flFadeStartTime: usize = 0x64; // float32
+                pub const m_flFadeDuration: usize = 0x68; // float32
+                pub const m_flLightingOriginOffset: usize = 0x6C; // float32
                 pub const m_flBoundingRadiusSqr: usize = 0x78; // float32
                 pub const m_nSequenceIndex: usize = 0x7C; // int16
                 pub const m_bIsAdjacent: usize = 0x7E; // bool
@@ -486,38 +487,40 @@ pub mod cs2_dumper {
                 pub const m_fIdealSampleRate: usize = 0x10; // float32
             }
             // Parent: None
-            // Field count: 7
+            // Field count: 8
             pub mod CTakeDamageResult {
                 pub const m_pOriginatingInfo: usize = 0x0; // CTakeDamageInfo*
                 pub const m_nHealthLost: usize = 0x8; // int32
-                pub const m_nDamageDealt: usize = 0xC; // int32
-                pub const m_flPreModifiedDamage: usize = 0x10; // float32
-                pub const m_nTotalledHealthLost: usize = 0x14; // int32
-                pub const m_nTotalledDamageDealt: usize = 0x18; // int32
-                pub const m_bWasDamageSuppressed: usize = 0x1C; // bool
+                pub const m_nHealthBefore: usize = 0xC; // int32
+                pub const m_nDamageDealt: usize = 0x10; // int32
+                pub const m_flPreModifiedDamage: usize = 0x14; // float32
+                pub const m_nTotalledHealthLost: usize = 0x18; // int32
+                pub const m_nTotalledDamageDealt: usize = 0x1C; // int32
+                pub const m_bWasDamageSuppressed: usize = 0x20; // bool
             }
             // Parent: None
-            // Field count: 19
+            // Field count: 20
             pub mod CCS2WeaponGraphController {
                 pub const m_action: usize = 0x80; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
                 pub const m_bActionReset: usize = 0xA0; // CAnimGraph2ParamOptionalRef<bool>
-                pub const m_weaponCategory: usize = 0xB8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                pub const m_weaponType: usize = 0xD8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                pub const m_weaponExtraInfo: usize = 0xF8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                pub const m_flWeaponAmmo: usize = 0x118; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_flWeaponAmmoMax: usize = 0x130; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_flWeaponAmmoReserve: usize = 0x148; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_bWeaponIsSilenced: usize = 0x160; // CAnimGraph2ParamOptionalRef<bool>
-                pub const m_flWeaponIronsightAmount: usize = 0x178; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_bIsUsingLegacyModel: usize = 0x190; // CAnimGraph2ParamOptionalRef<bool>
-                pub const m_idleVariation: usize = 0x1A8; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_deployVariation: usize = 0x1C0; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_attackType: usize = 0x1D8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                pub const m_attackThrowStrength: usize = 0x1F8; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_flAttackVariation: usize = 0x210; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_inspectVariation: usize = 0x228; // CAnimGraph2ParamOptionalRef<float32>
-                pub const m_inspectExtraInfo: usize = 0x240; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                pub const m_reloadStage: usize = 0x260; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                pub const m_flWeaponActionSpeedScale: usize = 0xB8; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_weaponCategory: usize = 0xD0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                pub const m_weaponType: usize = 0xF0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                pub const m_weaponExtraInfo: usize = 0x110; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                pub const m_flWeaponAmmo: usize = 0x130; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_flWeaponAmmoMax: usize = 0x148; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_flWeaponAmmoReserve: usize = 0x160; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_bWeaponIsSilenced: usize = 0x178; // CAnimGraph2ParamOptionalRef<bool>
+                pub const m_flWeaponIronsightAmount: usize = 0x190; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_bIsUsingLegacyModel: usize = 0x1A8; // CAnimGraph2ParamOptionalRef<bool>
+                pub const m_idleVariation: usize = 0x1C0; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_deployVariation: usize = 0x1D8; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_attackType: usize = 0x1F0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                pub const m_attackThrowStrength: usize = 0x210; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_flAttackVariation: usize = 0x228; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_inspectVariation: usize = 0x240; // CAnimGraph2ParamOptionalRef<float32>
+                pub const m_inspectExtraInfo: usize = 0x258; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                pub const m_reloadStage: usize = 0x278; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
             }
             // Parent: None
             // Field count: 1
@@ -586,14 +589,6 @@ pub mod cs2_dumper {
                 pub const m_bIsInterpolated: usize = 0xE0; // bool
                 pub const m_unRecommendedDistance: usize = 0xE4; // uint32
                 pub const m_vecAnimgraphVars: usize = 0xE8; // CUtlVector<CNavLinkAnimgraphVar>
-            }
-            // Parent: None
-            // Field count: 4
-            pub mod CChicken_GraphController {
-                pub const m_paramActivity: usize = 0x268; // CAnimGraphParamRef<char*>
-                pub const m_paramEndActivityImmediately: usize = 0x290; // CAnimGraphParamRef<bool>
-                pub const m_sActivityFinished: usize = 0x2B0; // CAnimGraphTagRef
-                pub const m_paramTurnAngle: usize = 0x2C8; // CAnimGraphParamRef<float32>
             }
             // Parent: None
             // Field count: 5
@@ -836,9 +831,9 @@ pub mod cs2_dumper {
                 pub const m_soundOrigin: usize = 0x58; // Vector
                 pub const m_isPlaying: usize = 0x64; // int32
                 pub const m_Filter: usize = 0x68; // CCopyRecipientFilter
-                pub const m_flCloseCaptionDuration: usize = 0x98; // float32
-                pub const m_bUpdatedSoundOrigin: usize = 0x9C; // bool
-                pub const m_iszClassName: usize = 0xA0; // CUtlSymbolLarge
+                pub const m_flCloseCaptionDuration: usize = 0xA0; // float32
+                pub const m_bUpdatedSoundOrigin: usize = 0xA4; // bool
+                pub const m_iszClassName: usize = 0xA8; // CUtlSymbolLarge
             }
             // Parent: None
             // Field count: 10
@@ -887,10 +882,11 @@ pub mod cs2_dumper {
                 pub const m_flValues: usize = 0x0; // float32[2]
             }
             // Parent: None
-            // Field count: 2
+            // Field count: 3
             pub mod CCopyRecipientFilter {
                 pub const m_Flags: usize = 0x8; // int32
                 pub const m_Recipients: usize = 0x10; // CUtlVector<CPlayerSlot>
+                pub const m_slotPlayerExcludedDueToPrediction: usize = 0x30; // CPlayerSlot
             }
             // Parent: None
             // Field count: 0
@@ -980,7 +976,7 @@ pub mod cs2_dumper {
                 pub const nSummarisedCount: usize = 0x0; // int32
                 pub const info: usize = 0x8; // CTakeDamageInfo
                 pub const result: usize = 0x130; // CTakeDamageResult
-                pub const hTarget: usize = 0x150; // CHandle<CBaseEntity>
+                pub const hTarget: usize = 0x158; // CHandle<CBaseEntity>
             }
             // Parent: None
             // Field count: 2
@@ -1007,14 +1003,15 @@ pub mod cs2_dumper {
             pub mod CVectorExponentialMovingAverage {
             }
             // Parent: None
-            // Field count: 4
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CNmAimCSNode__CDefinition {
                 pub const m_nVerticalAngleNodeIdx: usize = 0x18; // int16
                 pub const m_nHorizontalAngleNodeIdx: usize = 0x1A; // int16
-                pub const m_nEnabledNodeIdx: usize = 0x1C; // int16
+                pub const m_nWeaponCategoryNodeIdx: usize = 0x1C; // int16
+                pub const m_nEnabledNodeIdx: usize = 0x1E; // int16
                 pub const m_flBlendTimeSeconds: usize = 0x20; // float32
             }
             // Parent: None

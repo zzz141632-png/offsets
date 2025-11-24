@@ -192,16 +192,6 @@
         "metadata": [],
         "parent": null
       },
-      "C_Chicken_GraphController": {
-        "fields": {
-          "m_paramActivity": 616,
-          "m_paramEndActivityImmediately": 656,
-          "m_paramSnapToSquatting": 688,
-          "m_sActivityFinished": 720
-        },
-        "metadata": [],
-        "parent": null
-      },
       "C_CommandContext": {
         "fields": {
           "command_number": 160,
@@ -572,6 +562,50 @@
         "parent": null
       }
     },
-    "enums": {}
+    "enums": {
+      "PinnedDownswat_fem": {
+        "alignment": 236,
+        "members": {
+          "": 0,
+          "\u0003": 0,
+          "\bLT��": 4499785425120,
+          "\u000b": 0,
+          "\u0010\u001c��\u0017\u0004": 0,
+          "\u0010��\u0001�": 1,
+          "@i\u001c�\u0017\u0004": 64,
+          "D": 0,
+          "P�I�\u0017\u0004": 4,
+          "`�\u0016�\u0017\u0004": 5,
+          "handle": 4499785024704,
+          "pNT��": 4499783805440,
+          "pin": 4499785024672,
+          "ring": 4499785024736,
+          "scripts/talker/balkan.vrr": 4499784338848,
+          "scripts/talker/gendarmerie_fem_epic.vrr": 4499525171088,
+          "scripts/talker/jungle_fem_epic.vrr": 4499784338976,
+          "scripts/talker/leet.vrr": 4499784339072,
+          "scripts/talker/phoenix_heavy_coop.vrr": 4499784339168,
+          "scripts/talker/sas.vrr": 4499784339232,
+          "scripts/talker/seal_diver_03.vrr": 4499784339264,
+          "scripts/talker/swat_epic.vrr": 4499784339392,
+          "weapon": 0,
+          "weapon_offset": 4499785024640,
+          "�": 0,
+          "�\u0010P��": 3,
+          "�kI�\u0017\u0004": 4,
+          "�ס\u0017\u0004": 4499785025392,
+          "��\t�\u0017\u0004": 2048,
+          "��\u0015�\u0017\u0004": 723,
+          "��\u0018�\u0017\u0004": 2048,
+          "������������\u0001": 4294967296
+        },
+        "type": "unknown"
+      },
+      "______": {
+        "alignment": 255,
+        "members": {},
+        "type": "unknown"
+      }
+    }
   }
 }

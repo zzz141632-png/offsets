@@ -151,40 +151,31 @@
       "CCS2WeaponGraphController": {
         "fields": {
           "m_action": 128,
-          "m_attackThrowStrength": 504,
-          "m_attackType": 472,
+          "m_attackThrowStrength": 528,
+          "m_attackType": 496,
           "m_bActionReset": 160,
-          "m_bIsUsingLegacyModel": 400,
-          "m_bWeaponIsSilenced": 352,
-          "m_deployVariation": 448,
-          "m_flAttackVariation": 528,
-          "m_flWeaponAmmo": 280,
-          "m_flWeaponAmmoMax": 304,
-          "m_flWeaponAmmoReserve": 328,
-          "m_flWeaponIronsightAmount": 376,
-          "m_idleVariation": 424,
-          "m_inspectExtraInfo": 576,
-          "m_inspectVariation": 552,
-          "m_reloadStage": 608,
-          "m_weaponCategory": 184,
-          "m_weaponExtraInfo": 248,
-          "m_weaponType": 216
+          "m_bIsUsingLegacyModel": 424,
+          "m_bWeaponIsSilenced": 376,
+          "m_deployVariation": 472,
+          "m_flAttackVariation": 552,
+          "m_flWeaponActionSpeedScale": 184,
+          "m_flWeaponAmmo": 304,
+          "m_flWeaponAmmoMax": 328,
+          "m_flWeaponAmmoReserve": 352,
+          "m_flWeaponIronsightAmount": 400,
+          "m_idleVariation": 448,
+          "m_inspectExtraInfo": 600,
+          "m_inspectVariation": 576,
+          "m_reloadStage": 632,
+          "m_weaponCategory": 208,
+          "m_weaponExtraInfo": 272,
+          "m_weaponType": 240
         },
         "metadata": [],
         "parent": null
       },
       "CCSGOPlayerAnimGraphState": {
         "fields": {},
-        "metadata": [],
-        "parent": null
-      },
-      "CChicken_GraphController": {
-        "fields": {
-          "m_paramActivity": 616,
-          "m_paramEndActivityImmediately": 656,
-          "m_paramTurnAngle": 712,
-          "m_sActivityFinished": 688
-        },
         "metadata": [],
         "parent": null
       },
@@ -217,7 +208,8 @@
       "CCopyRecipientFilter": {
         "fields": {
           "m_Flags": 8,
-          "m_Recipients": 16
+          "m_Recipients": 16,
+          "m_slotPlayerExcludedDueToPrediction": 48
         },
         "metadata": [],
         "parent": null
@@ -241,13 +233,14 @@
           "m_bDoDecalLightmapping": 127,
           "m_bIsAdjacent": 126,
           "m_flAnimationScale": 88,
+          "m_flAnimationStartTime": 92,
           "m_flBoundingRadiusSqr": 120,
           "m_flDepth": 84,
-          "m_flFadeDuration": 100,
-          "m_flFadeStartTime": 96,
+          "m_flFadeDuration": 104,
+          "m_flFadeStartTime": 100,
           "m_flHeight": 80,
-          "m_flLightingOriginOffset": 104,
-          "m_flPlaceTime": 92,
+          "m_flLightingOriginOffset": 108,
+          "m_flPlaceTime": 96,
           "m_flWidth": 76,
           "m_hEntity": 20,
           "m_hMaterial": 8,
@@ -669,9 +662,10 @@
       "CNmAimCSNode__CDefinition": {
         "fields": {
           "m_flBlendTimeSeconds": 32,
-          "m_nEnabledNodeIdx": 28,
+          "m_nEnabledNodeIdx": 30,
           "m_nHorizontalAngleNodeIdx": 26,
-          "m_nVerticalAngleNodeIdx": 24
+          "m_nVerticalAngleNodeIdx": 24,
+          "m_nWeaponCategoryNodeIdx": 28
         },
         "metadata": [
           {
@@ -1093,12 +1087,12 @@
       "CSoundPatch": {
         "fields": {
           "m_Filter": 104,
-          "m_bUpdatedSoundOrigin": 156,
-          "m_flCloseCaptionDuration": 152,
+          "m_bUpdatedSoundOrigin": 164,
+          "m_flCloseCaptionDuration": 160,
           "m_flLastTime": 64,
           "m_hEnt": 80,
           "m_isPlaying": 100,
-          "m_iszClassName": 160,
+          "m_iszClassName": 168,
           "m_iszSoundScriptName": 72,
           "m_pitch": 8,
           "m_shutdownTime": 60,
@@ -1153,12 +1147,13 @@
       },
       "CTakeDamageResult": {
         "fields": {
-          "m_bWasDamageSuppressed": 28,
-          "m_flPreModifiedDamage": 16,
-          "m_nDamageDealt": 12,
+          "m_bWasDamageSuppressed": 32,
+          "m_flPreModifiedDamage": 20,
+          "m_nDamageDealt": 16,
+          "m_nHealthBefore": 12,
           "m_nHealthLost": 8,
-          "m_nTotalledDamageDealt": 24,
-          "m_nTotalledHealthLost": 20,
+          "m_nTotalledDamageDealt": 28,
+          "m_nTotalledHealthLost": 24,
           "m_pOriginatingInfo": 0
         },
         "metadata": [],
@@ -1504,7 +1499,7 @@
       },
       "SummaryTakeDamageInfo_t": {
         "fields": {
-          "hTarget": 336,
+          "hTarget": 344,
           "info": 8,
           "nSummarisedCount": 0,
           "result": 304
@@ -1751,6 +1746,11 @@
           "TRANSITION_TO_PATH_NODE_TRANSITIONING": 3
         },
         "type": "uint32"
+      },
+      "CFuncRetakeBarrier": {
+        "alignment": 20,
+        "members": {},
+        "type": "unknown"
       },
       "CGameSceneNode": {
         "alignment": 1,

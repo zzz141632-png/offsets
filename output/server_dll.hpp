@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-14 23:07:52.782756500 UTC
+// 2025-11-24 13:58:14.806423300 UTC
 
 #pragma once
 
@@ -8,8 +8,8 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: server.dll
-        // Class count: 156
-        // Enum count: 91
+        // Class count: 155
+        // Enum count: 92
         namespace server_dll {
             // Alignment: 4
             // Member count: 4
@@ -315,7 +315,7 @@ namespace cs2_dumper {
             namespace CCSGOPlayerAnimGraphState {
             }
             // Parent: None
-            // Field count: 24
+            // Field count: 25
             namespace CDecalInstance {
                 constexpr std::ptrdiff_t m_sDecalGroup = 0x0; // CGlobalSymbol
                 constexpr std::ptrdiff_t m_hMaterial = 0x8; // CStrongHandle<InfoForResourceTypeIMaterial2>
@@ -332,10 +332,11 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flHeight = 0x50; // float32
                 constexpr std::ptrdiff_t m_flDepth = 0x54; // float32
                 constexpr std::ptrdiff_t m_flAnimationScale = 0x58; // float32
-                constexpr std::ptrdiff_t m_flPlaceTime = 0x5C; // GameTime_t
-                constexpr std::ptrdiff_t m_flFadeStartTime = 0x60; // float32
-                constexpr std::ptrdiff_t m_flFadeDuration = 0x64; // float32
-                constexpr std::ptrdiff_t m_flLightingOriginOffset = 0x68; // float32
+                constexpr std::ptrdiff_t m_flAnimationStartTime = 0x5C; // float32
+                constexpr std::ptrdiff_t m_flPlaceTime = 0x60; // GameTime_t
+                constexpr std::ptrdiff_t m_flFadeStartTime = 0x64; // float32
+                constexpr std::ptrdiff_t m_flFadeDuration = 0x68; // float32
+                constexpr std::ptrdiff_t m_flLightingOriginOffset = 0x6C; // float32
                 constexpr std::ptrdiff_t m_flBoundingRadiusSqr = 0x78; // float32
                 constexpr std::ptrdiff_t m_nSequenceIndex = 0x7C; // int16
                 constexpr std::ptrdiff_t m_bIsAdjacent = 0x7E; // bool
@@ -547,38 +548,40 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_fIdealSampleRate = 0x10; // float32
             }
             // Parent: None
-            // Field count: 7
+            // Field count: 8
             namespace CTakeDamageResult {
                 constexpr std::ptrdiff_t m_pOriginatingInfo = 0x0; // CTakeDamageInfo*
                 constexpr std::ptrdiff_t m_nHealthLost = 0x8; // int32
-                constexpr std::ptrdiff_t m_nDamageDealt = 0xC; // int32
-                constexpr std::ptrdiff_t m_flPreModifiedDamage = 0x10; // float32
-                constexpr std::ptrdiff_t m_nTotalledHealthLost = 0x14; // int32
-                constexpr std::ptrdiff_t m_nTotalledDamageDealt = 0x18; // int32
-                constexpr std::ptrdiff_t m_bWasDamageSuppressed = 0x1C; // bool
+                constexpr std::ptrdiff_t m_nHealthBefore = 0xC; // int32
+                constexpr std::ptrdiff_t m_nDamageDealt = 0x10; // int32
+                constexpr std::ptrdiff_t m_flPreModifiedDamage = 0x14; // float32
+                constexpr std::ptrdiff_t m_nTotalledHealthLost = 0x18; // int32
+                constexpr std::ptrdiff_t m_nTotalledDamageDealt = 0x1C; // int32
+                constexpr std::ptrdiff_t m_bWasDamageSuppressed = 0x20; // bool
             }
             // Parent: None
-            // Field count: 19
+            // Field count: 20
             namespace CCS2WeaponGraphController {
                 constexpr std::ptrdiff_t m_action = 0x80; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
                 constexpr std::ptrdiff_t m_bActionReset = 0xA0; // CAnimGraph2ParamOptionalRef<bool>
-                constexpr std::ptrdiff_t m_weaponCategory = 0xB8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                constexpr std::ptrdiff_t m_weaponType = 0xD8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                constexpr std::ptrdiff_t m_weaponExtraInfo = 0xF8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                constexpr std::ptrdiff_t m_flWeaponAmmo = 0x118; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_flWeaponAmmoMax = 0x130; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_flWeaponAmmoReserve = 0x148; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_bWeaponIsSilenced = 0x160; // CAnimGraph2ParamOptionalRef<bool>
-                constexpr std::ptrdiff_t m_flWeaponIronsightAmount = 0x178; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_bIsUsingLegacyModel = 0x190; // CAnimGraph2ParamOptionalRef<bool>
-                constexpr std::ptrdiff_t m_idleVariation = 0x1A8; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_deployVariation = 0x1C0; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_attackType = 0x1D8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                constexpr std::ptrdiff_t m_attackThrowStrength = 0x1F8; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_flAttackVariation = 0x210; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_inspectVariation = 0x228; // CAnimGraph2ParamOptionalRef<float32>
-                constexpr std::ptrdiff_t m_inspectExtraInfo = 0x240; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-                constexpr std::ptrdiff_t m_reloadStage = 0x260; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                constexpr std::ptrdiff_t m_flWeaponActionSpeedScale = 0xB8; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_weaponCategory = 0xD0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                constexpr std::ptrdiff_t m_weaponType = 0xF0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                constexpr std::ptrdiff_t m_weaponExtraInfo = 0x110; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                constexpr std::ptrdiff_t m_flWeaponAmmo = 0x130; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_flWeaponAmmoMax = 0x148; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_flWeaponAmmoReserve = 0x160; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_bWeaponIsSilenced = 0x178; // CAnimGraph2ParamOptionalRef<bool>
+                constexpr std::ptrdiff_t m_flWeaponIronsightAmount = 0x190; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_bIsUsingLegacyModel = 0x1A8; // CAnimGraph2ParamOptionalRef<bool>
+                constexpr std::ptrdiff_t m_idleVariation = 0x1C0; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_deployVariation = 0x1D8; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_attackType = 0x1F0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                constexpr std::ptrdiff_t m_attackThrowStrength = 0x210; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_flAttackVariation = 0x228; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_inspectVariation = 0x240; // CAnimGraph2ParamOptionalRef<float32>
+                constexpr std::ptrdiff_t m_inspectExtraInfo = 0x258; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+                constexpr std::ptrdiff_t m_reloadStage = 0x278; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
             }
             // Parent: None
             // Field count: 1
@@ -647,14 +650,6 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bIsInterpolated = 0xE0; // bool
                 constexpr std::ptrdiff_t m_unRecommendedDistance = 0xE4; // uint32
                 constexpr std::ptrdiff_t m_vecAnimgraphVars = 0xE8; // CUtlVector<CNavLinkAnimgraphVar>
-            }
-            // Parent: None
-            // Field count: 4
-            namespace CChicken_GraphController {
-                constexpr std::ptrdiff_t m_paramActivity = 0x268; // CAnimGraphParamRef<char*>
-                constexpr std::ptrdiff_t m_paramEndActivityImmediately = 0x290; // CAnimGraphParamRef<bool>
-                constexpr std::ptrdiff_t m_sActivityFinished = 0x2B0; // CAnimGraphTagRef
-                constexpr std::ptrdiff_t m_paramTurnAngle = 0x2C8; // CAnimGraphParamRef<float32>
             }
             // Parent: None
             // Field count: 5
@@ -897,9 +892,9 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_soundOrigin = 0x58; // Vector
                 constexpr std::ptrdiff_t m_isPlaying = 0x64; // int32
                 constexpr std::ptrdiff_t m_Filter = 0x68; // CCopyRecipientFilter
-                constexpr std::ptrdiff_t m_flCloseCaptionDuration = 0x98; // float32
-                constexpr std::ptrdiff_t m_bUpdatedSoundOrigin = 0x9C; // bool
-                constexpr std::ptrdiff_t m_iszClassName = 0xA0; // CUtlSymbolLarge
+                constexpr std::ptrdiff_t m_flCloseCaptionDuration = 0xA0; // float32
+                constexpr std::ptrdiff_t m_bUpdatedSoundOrigin = 0xA4; // bool
+                constexpr std::ptrdiff_t m_iszClassName = 0xA8; // CUtlSymbolLarge
             }
             // Parent: None
             // Field count: 10
@@ -948,10 +943,11 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flValues = 0x0; // float32[2]
             }
             // Parent: None
-            // Field count: 2
+            // Field count: 3
             namespace CCopyRecipientFilter {
                 constexpr std::ptrdiff_t m_Flags = 0x8; // int32
                 constexpr std::ptrdiff_t m_Recipients = 0x10; // CUtlVector<CPlayerSlot>
+                constexpr std::ptrdiff_t m_slotPlayerExcludedDueToPrediction = 0x30; // CPlayerSlot
             }
             // Parent: None
             // Field count: 0
@@ -1041,7 +1037,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t nSummarisedCount = 0x0; // int32
                 constexpr std::ptrdiff_t info = 0x8; // CTakeDamageInfo
                 constexpr std::ptrdiff_t result = 0x130; // CTakeDamageResult
-                constexpr std::ptrdiff_t hTarget = 0x150; // CHandle<CBaseEntity>
+                constexpr std::ptrdiff_t hTarget = 0x158; // CHandle<CBaseEntity>
             }
             // Parent: None
             // Field count: 2
@@ -1068,14 +1064,15 @@ namespace cs2_dumper {
             namespace CVectorExponentialMovingAverage {
             }
             // Parent: None
-            // Field count: 4
+            // Field count: 5
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CNmAimCSNode__CDefinition {
                 constexpr std::ptrdiff_t m_nVerticalAngleNodeIdx = 0x18; // int16
                 constexpr std::ptrdiff_t m_nHorizontalAngleNodeIdx = 0x1A; // int16
-                constexpr std::ptrdiff_t m_nEnabledNodeIdx = 0x1C; // int16
+                constexpr std::ptrdiff_t m_nWeaponCategoryNodeIdx = 0x1C; // int16
+                constexpr std::ptrdiff_t m_nEnabledNodeIdx = 0x1E; // int16
                 constexpr std::ptrdiff_t m_flBlendTimeSeconds = 0x20; // float32
             }
             // Parent: None

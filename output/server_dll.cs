@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-14 23:07:52.782756500 UTC
+// 2025-11-24 13:58:14.806423300 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
-    // Class count: 156
-    // Enum count: 91
+    // Class count: 155
+    // Enum count: 92
     public static class ServerDll {
         // Alignment: 4
         // Member count: 4
@@ -310,7 +310,7 @@ namespace CS2Dumper.Schemas {
         public static class CCSGOPlayerAnimGraphState {
         }
         // Parent: None
-        // Field count: 24
+        // Field count: 25
         public static class CDecalInstance {
             public const nint m_sDecalGroup = 0x0; // CGlobalSymbol
             public const nint m_hMaterial = 0x8; // CStrongHandle<InfoForResourceTypeIMaterial2>
@@ -327,10 +327,11 @@ namespace CS2Dumper.Schemas {
             public const nint m_flHeight = 0x50; // float32
             public const nint m_flDepth = 0x54; // float32
             public const nint m_flAnimationScale = 0x58; // float32
-            public const nint m_flPlaceTime = 0x5C; // GameTime_t
-            public const nint m_flFadeStartTime = 0x60; // float32
-            public const nint m_flFadeDuration = 0x64; // float32
-            public const nint m_flLightingOriginOffset = 0x68; // float32
+            public const nint m_flAnimationStartTime = 0x5C; // float32
+            public const nint m_flPlaceTime = 0x60; // GameTime_t
+            public const nint m_flFadeStartTime = 0x64; // float32
+            public const nint m_flFadeDuration = 0x68; // float32
+            public const nint m_flLightingOriginOffset = 0x6C; // float32
             public const nint m_flBoundingRadiusSqr = 0x78; // float32
             public const nint m_nSequenceIndex = 0x7C; // int16
             public const nint m_bIsAdjacent = 0x7E; // bool
@@ -542,38 +543,40 @@ namespace CS2Dumper.Schemas {
             public const nint m_fIdealSampleRate = 0x10; // float32
         }
         // Parent: None
-        // Field count: 7
+        // Field count: 8
         public static class CTakeDamageResult {
             public const nint m_pOriginatingInfo = 0x0; // CTakeDamageInfo*
             public const nint m_nHealthLost = 0x8; // int32
-            public const nint m_nDamageDealt = 0xC; // int32
-            public const nint m_flPreModifiedDamage = 0x10; // float32
-            public const nint m_nTotalledHealthLost = 0x14; // int32
-            public const nint m_nTotalledDamageDealt = 0x18; // int32
-            public const nint m_bWasDamageSuppressed = 0x1C; // bool
+            public const nint m_nHealthBefore = 0xC; // int32
+            public const nint m_nDamageDealt = 0x10; // int32
+            public const nint m_flPreModifiedDamage = 0x14; // float32
+            public const nint m_nTotalledHealthLost = 0x18; // int32
+            public const nint m_nTotalledDamageDealt = 0x1C; // int32
+            public const nint m_bWasDamageSuppressed = 0x20; // bool
         }
         // Parent: None
-        // Field count: 19
+        // Field count: 20
         public static class CCS2WeaponGraphController {
             public const nint m_action = 0x80; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
             public const nint m_bActionReset = 0xA0; // CAnimGraph2ParamOptionalRef<bool>
-            public const nint m_weaponCategory = 0xB8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-            public const nint m_weaponType = 0xD8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-            public const nint m_weaponExtraInfo = 0xF8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-            public const nint m_flWeaponAmmo = 0x118; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_flWeaponAmmoMax = 0x130; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_flWeaponAmmoReserve = 0x148; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_bWeaponIsSilenced = 0x160; // CAnimGraph2ParamOptionalRef<bool>
-            public const nint m_flWeaponIronsightAmount = 0x178; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_bIsUsingLegacyModel = 0x190; // CAnimGraph2ParamOptionalRef<bool>
-            public const nint m_idleVariation = 0x1A8; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_deployVariation = 0x1C0; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_attackType = 0x1D8; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-            public const nint m_attackThrowStrength = 0x1F8; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_flAttackVariation = 0x210; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_inspectVariation = 0x228; // CAnimGraph2ParamOptionalRef<float32>
-            public const nint m_inspectExtraInfo = 0x240; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
-            public const nint m_reloadStage = 0x260; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+            public const nint m_flWeaponActionSpeedScale = 0xB8; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_weaponCategory = 0xD0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+            public const nint m_weaponType = 0xF0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+            public const nint m_weaponExtraInfo = 0x110; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+            public const nint m_flWeaponAmmo = 0x130; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_flWeaponAmmoMax = 0x148; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_flWeaponAmmoReserve = 0x160; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_bWeaponIsSilenced = 0x178; // CAnimGraph2ParamOptionalRef<bool>
+            public const nint m_flWeaponIronsightAmount = 0x190; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_bIsUsingLegacyModel = 0x1A8; // CAnimGraph2ParamOptionalRef<bool>
+            public const nint m_idleVariation = 0x1C0; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_deployVariation = 0x1D8; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_attackType = 0x1F0; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+            public const nint m_attackThrowStrength = 0x210; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_flAttackVariation = 0x228; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_inspectVariation = 0x240; // CAnimGraph2ParamOptionalRef<float32>
+            public const nint m_inspectExtraInfo = 0x258; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
+            public const nint m_reloadStage = 0x278; // CAnimGraph2ParamOptionalRef<CGlobalSymbol>
         }
         // Parent: None
         // Field count: 1
@@ -642,14 +645,6 @@ namespace CS2Dumper.Schemas {
             public const nint m_bIsInterpolated = 0xE0; // bool
             public const nint m_unRecommendedDistance = 0xE4; // uint32
             public const nint m_vecAnimgraphVars = 0xE8; // CUtlVector<CNavLinkAnimgraphVar>
-        }
-        // Parent: None
-        // Field count: 4
-        public static class CChicken_GraphController {
-            public const nint m_paramActivity = 0x268; // CAnimGraphParamRef<char*>
-            public const nint m_paramEndActivityImmediately = 0x290; // CAnimGraphParamRef<bool>
-            public const nint m_sActivityFinished = 0x2B0; // CAnimGraphTagRef
-            public const nint m_paramTurnAngle = 0x2C8; // CAnimGraphParamRef<float32>
         }
         // Parent: None
         // Field count: 5
@@ -892,9 +887,9 @@ namespace CS2Dumper.Schemas {
             public const nint m_soundOrigin = 0x58; // Vector
             public const nint m_isPlaying = 0x64; // int32
             public const nint m_Filter = 0x68; // CCopyRecipientFilter
-            public const nint m_flCloseCaptionDuration = 0x98; // float32
-            public const nint m_bUpdatedSoundOrigin = 0x9C; // bool
-            public const nint m_iszClassName = 0xA0; // CUtlSymbolLarge
+            public const nint m_flCloseCaptionDuration = 0xA0; // float32
+            public const nint m_bUpdatedSoundOrigin = 0xA4; // bool
+            public const nint m_iszClassName = 0xA8; // CUtlSymbolLarge
         }
         // Parent: None
         // Field count: 10
@@ -943,10 +938,11 @@ namespace CS2Dumper.Schemas {
             public const nint m_flValues = 0x0; // float32[2]
         }
         // Parent: None
-        // Field count: 2
+        // Field count: 3
         public static class CCopyRecipientFilter {
             public const nint m_Flags = 0x8; // int32
             public const nint m_Recipients = 0x10; // CUtlVector<CPlayerSlot>
+            public const nint m_slotPlayerExcludedDueToPrediction = 0x30; // CPlayerSlot
         }
         // Parent: None
         // Field count: 0
@@ -1036,7 +1032,7 @@ namespace CS2Dumper.Schemas {
             public const nint nSummarisedCount = 0x0; // int32
             public const nint info = 0x8; // CTakeDamageInfo
             public const nint result = 0x130; // CTakeDamageResult
-            public const nint hTarget = 0x150; // CHandle<CBaseEntity>
+            public const nint hTarget = 0x158; // CHandle<CBaseEntity>
         }
         // Parent: None
         // Field count: 2
@@ -1063,14 +1059,15 @@ namespace CS2Dumper.Schemas {
         public static class CVectorExponentialMovingAverage {
         }
         // Parent: None
-        // Field count: 4
+        // Field count: 5
         //
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CNmAimCSNode__CDefinition {
             public const nint m_nVerticalAngleNodeIdx = 0x18; // int16
             public const nint m_nHorizontalAngleNodeIdx = 0x1A; // int16
-            public const nint m_nEnabledNodeIdx = 0x1C; // int16
+            public const nint m_nWeaponCategoryNodeIdx = 0x1C; // int16
+            public const nint m_nEnabledNodeIdx = 0x1E; // int16
             public const nint m_flBlendTimeSeconds = 0x20; // float32
         }
         // Parent: None

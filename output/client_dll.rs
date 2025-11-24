@@ -1,13 +1,13 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-14 23:07:52.782756500 UTC
+// 2025-11-24 13:58:14.806423300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
         // Module: client.dll
-        // Class count: 30
-        // Enum count: 0
+        // Class count: 29
+        // Enum count: 2
         pub mod client_dll {
             // Parent: None
             // Field count: 1
@@ -145,14 +145,6 @@ pub mod cs2_dumper {
                 pub const position: usize = 0x0; // Vector
                 pub const angle: usize = 0xC; // QAngle
                 pub const pose_sequence: usize = 0x18; // CUtlString
-            }
-            // Parent: None
-            // Field count: 4
-            pub mod C_Chicken_GraphController {
-                pub const m_paramActivity: usize = 0x268; // CAnimGraphParamRef<char*>
-                pub const m_paramEndActivityImmediately: usize = 0x290; // CAnimGraphParamRef<bool>
-                pub const m_paramSnapToSquatting: usize = 0x2B0; // CAnimGraphParamRef<bool>
-                pub const m_sActivityFinished: usize = 0x2D0; // CAnimGraphTagRef
             }
             // Parent: None
             // Field count: 2
